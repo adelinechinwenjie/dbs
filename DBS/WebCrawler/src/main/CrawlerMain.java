@@ -11,7 +11,8 @@ public class CrawlerMain {
 		
 		CrawlerService crawlerService = new CrawlerService();
 		HashMap<String,String> linksWithKeywordMap = crawlerService.allUrlsWithinUrlWithKeyword("https://developer.mozilla.org/en-US/docs/Web/API/Document","document",0);
-	    for(String key:linksWithKeywordMap.keySet()) {
+	    	
+		for(String key:linksWithKeywordMap.keySet()) {
 			System.out.println(linksWithKeywordMap.get(key));
 		}
 	    
